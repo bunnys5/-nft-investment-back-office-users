@@ -822,6 +822,10 @@ textarea.w-input, textarea.w-select {
 
 @media screen and (max-width: 991px) {
 
+  .div-block-18-copy-copy-logout {
+    display: block !important;
+  }
+
   .w-container {
     max-width: 728px;
   }
@@ -886,6 +890,12 @@ textarea.w-input, textarea.w-select {
     width: 100%;
     left: auto;
     right: auto;
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  .div-block-18-copy-copy-logout {
+    display: none !important;
   }
 }
 
@@ -3044,6 +3054,16 @@ textarea.w-input, textarea.w-select {
 }
 
 .div-block-18-copy-copy {
+  width: 100%;
+  text-align: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 40px;
+  display: block;
+}
+
+.div-block-18-copy-copy-logout {
+  width: 100%;
   text-align: center;
   justify-content: flex-start;
   align-items: flex-start;
@@ -3061,21 +3081,28 @@ textarea.w-input, textarea.w-select {
 }
 
 .div-block-26-copy-copy {
+  margin-left: 10px;
   height: 100%;
-  text-align: center;
+  text-align: start;
   justify-content: center;
   align-items: center;
-  margin-left: 2px;
+  display: flex;
+}
+.div-block-26-copy-copy-logout {
+  margin-left: 10px;
+  height: 100%;
+  text-align: start;
+  justify-content: center;
+  align-items: center;
   display: flex;
 }
 
 .link-3-copy-copy {
+  width: 80px;
+  margin-left: 15px;
   height: 100%;
   color: #fff;
-  justify-content: center;
   align-items: stretch;
-  margin-top: 6px;
-  margin-left: 24px;
   padding-left: 0;
   font-family: Prompt, sans-serif;
   font-size: 16px;
@@ -3118,7 +3145,6 @@ textarea.w-input, textarea.w-select {
   text-align: center;
   justify-content: center;
   align-items: center;
-  margin-left: 2px;
   display: flex;
 }
 
@@ -3127,8 +3153,6 @@ textarea.w-input, textarea.w-select {
   color: #fff;
   justify-content: center;
   align-items: stretch;
-  margin-top: 6px;
-  margin-left: -2px;
   padding-left: 0;
   font-family: Prompt, sans-serif;
   font-size: 16px;

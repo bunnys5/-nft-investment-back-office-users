@@ -203,3 +203,10 @@
 <style scoped>
 @import url(../../styles/dashboard.css);
 </style>
+
+<script>
+export default {
+  layout: 'default'
+};
+
+</script>

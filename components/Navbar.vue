@@ -6,7 +6,7 @@
       <div class="div-block-7">
         <a
           href="https://sanhanats-stunning-site.webflow.io/#"
-          class="link-block-2 w-inline-block" style="display:none;"
+          class="link-block-2 w-inline-block"
           ><div class="text-block-9">Logout</div>
           <img
             src="../assets/sidebar-navbar-dashboard/6458b98c5f4e30a6c1bda778_logout.png"
@@ -32,15 +32,13 @@
     </div>
 </template>
 
-<script lang="ts">
+<script>
 
 // import { CButton } from '@chakra-ui/vue';
 
 export default {
-    name: "Navbar",
-    // components : {
-    //   CButton,
-    // }
+
+
 }
 
 </script>
