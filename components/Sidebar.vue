@@ -115,10 +115,6 @@ export default {
   cursor: pointer;
 }
 
-.div-block-6 {
-  display: none !important;
-}
-
 .side-menu-open {
   display: flex !important;
 }
