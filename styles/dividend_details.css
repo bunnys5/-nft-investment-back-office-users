@@ -4193,7 +4193,7 @@ textarea.w-input, textarea.w-select {
 .section-copy {
   width: 90%;
   z-index: -99;
-  height: auto;
+  height: 100%;
   background-color: #f1f1f1;
   margin-top: 0;
   display: block;

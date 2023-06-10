@@ -3677,7 +3677,16 @@ textarea.w-input, textarea.w-select {
   display: flex;
 }
 
+.button-add {
+  color: white;
+  font-family: 'Prompt';
+}
+
 .div-block-38 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-left: 0;
 }
 

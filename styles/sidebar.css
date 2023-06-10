@@ -821,7 +821,11 @@ textarea.w-input, textarea.w-select {
 }
 
 @media screen and (max-width: 991px) {
+  .div-block-6 {
+    transform: translateX(-1000px);
+  }
 
+  
   .div-block-18-copy-copy-logout {
     display: block !important;
   }
@@ -894,6 +898,12 @@ textarea.w-input, textarea.w-select {
 }
 
 @media screen and (max-width: 1920px) {
+  .close-icon {
+    display: none;
+  }
+
+
+
   .div-block-18-copy-copy-logout {
     display: none !important;
   }
@@ -2004,6 +2014,8 @@ textarea.w-input, textarea.w-select {
 }
 
 @media screen and (max-width: 991px) {
+
+  
   .w-nav[data-collapse="medium"] .w-nav-menu {
     display: none;
   }
@@ -2627,6 +2639,19 @@ textarea.w-input, textarea.w-select {
   position: fixed;
 }
 
+
+
+.sidebar-active {
+  transform: translateX(0px);
+  transition: 0.5s;
+  
+}
+
+.sidebar-close {
+  transform: translateX(-1000px) !important;
+  transition: 0.5s !important;
+}
+
 .text-block-11 {
   margin-left: 11px;
   margin-right: 49px;
@@ -3213,6 +3238,11 @@ textarea.w-input, textarea.w-select {
 }
 
 @media screen and (max-width: 991px) {
+  .close-icon {
+    display: flex;
+  }
+
+
   .container {
     max-width: 728px;
   }

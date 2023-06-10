@@ -1,7 +1,7 @@
 <template>
-  <div class="div-block-6">
+  <div class="div-block-6" id="div-block-6">
     <div class="div-block-8">
-      <div class="close-icon">
+      <div class="close-icon" id="close-icon">
         <img
           class="img-close"
           src="../assets/sidebar/Group10.svg"
@@ -73,6 +73,19 @@
             <NuxtLink class="link-3-copy-copy" to="../dividend">Pools</NuxtLink>
           </div>
         </div>
+        <div class="div-block-18-copy-copy">
+          <div class="div-block-25-copy-copy">
+            <img
+              src="../assets/sidebar-navbar-dashboard/645a1e7249c0961222b90fbd_Vector (1).svg"
+              loading="lazy"
+              alt=""
+              class="image-18"
+            />
+          </div>
+          <div class="div-block-26-copy-copy">
+            <NuxtLink class="link-3-copy-copy" to="../dividend">Profile</NuxtLink>
+          </div>
+        </div>
         <div class="div-block-18-copy-copy-logout">
           <div class="div-block-25-copy-copy">
             <img
@@ -95,8 +108,19 @@
 
 <script>
 export default {
-
-
+  async mounted() {
+    await this.pressMenu();
+  },
+  methods: {
+    async pressMenu() {
+      let sidebar = document.getElementById("div-block-6");
+      let menuBtn = document.getElementById("close-icon");
+      menuBtn.onclick = function () {
+        sidebar.classList.add("sidebar-close");
+        console.log(sidebar);
+      };
+    },
+  },
 };
 </script>
 
@@ -115,17 +139,4 @@ export default {
   cursor: pointer;
 }
 
-.side-menu-open {
-  display: flex !important;
-}
-
-@media screen and (max-width: 991px) {
-  .div-block-6 {
-    display: none !important;
-  }
-
-  .sidebar-open {
-    transform: translateX(0);
-  }
-}
 </style>

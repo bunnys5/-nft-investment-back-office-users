@@ -813,6 +813,10 @@ textarea.w-input, textarea.w-select {
     display: none !important;
   }
 
+  .div-block-tran {
+    padding-right: 0px !important;
+  }
+
 
   .w-container {
     max-width: 728px;
@@ -5405,6 +5409,7 @@ textarea.w-input, textarea.w-select {
 
   .div-block-tran {
     /* max-width: 300px !important; */
+    padding-right: 0px !important;
   }
 
   .text-block-10 {

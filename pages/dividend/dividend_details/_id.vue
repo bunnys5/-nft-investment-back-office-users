@@ -98,7 +98,7 @@
 </template>
 
 <style scoped>
-@import url(../../styles/dividend_details.css);
+@import url(~/styles/dividend_details.css);
 </style>
 
 <script lang="ts" setup>
