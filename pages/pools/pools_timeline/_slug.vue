@@ -163,6 +163,7 @@
                   <div class="div-block-101">
                     <div class="div-block-102">
                      
+                      <NuxtLink to="./devices/">
                       <Button
                         class="button-4"
                         style="
@@ -172,6 +173,8 @@
                         "
                         label="Devices"
                       />
+                      </NuxtLink>
+                      <NuxtLink to="../">
                       <Button
                         class="button-4"
                         style="
@@ -181,6 +184,7 @@
                         "
                         label="กลับ"
                       />
+                      </NuxtLink>
                     </div>
                   </div>
                 </div>

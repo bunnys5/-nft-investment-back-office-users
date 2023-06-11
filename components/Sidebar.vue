@@ -35,7 +35,7 @@
             class="image-10"
           />
         </div>
-        <div class="div-block-17">
+        <!-- <div class="div-block-17">
           <img
             src="../assets/sidebar-navbar-dashboard/645a10ad7a6d805d10369ad1_Vector.svg"
             loading="lazy"
@@ -43,7 +43,7 @@
             class="image-11"
           />
           <NuxtLink class="link-2" to="../transaction">Transaction</NuxtLink>
-        </div>
+        </div> -->
 
         <div class="div-block-18-copy-copy">
           <div class="div-block-25-copy-copy">

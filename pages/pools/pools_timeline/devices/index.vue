@@ -16,7 +16,9 @@
             <div class="div-block-38">
               <div class="text-block-22">จำนวนเครื่อง</div>
               <div class="button-nameTop">
+                <NuxtLink to="../_slug">
                 <Button class="button-add" label="กลับ" />
+                </NuxtLink>
               </div>
             </div>
           </div>

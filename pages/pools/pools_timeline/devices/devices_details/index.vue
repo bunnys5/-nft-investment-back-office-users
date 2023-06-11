@@ -19,6 +19,9 @@
           <div class="div-block-37-copy">
             <div class="div-block-38-tranin-copy">
               <div class="text-block-22">เงินหมุนเวียนในระบบ</div>
+              <div class="button-nameTop">
+                <Button class="button-add" label="กลับ" />
+              </div>
             </div>
           </div>
           <div class="div-block-49">

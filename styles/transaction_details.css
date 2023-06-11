@@ -4250,7 +4250,15 @@ textarea.w-input, textarea.w-select {
 }
 
 .div-block-38-tranin-copy {
+  width: 100%;
+  justify-content: space-between;
   margin-left: 0;
+  display: flex;
+}
+
+.button-add {
+  color: white;
+  font-family: 'Prompt';
 }
 
 .div-block-39-tranin-copy {
