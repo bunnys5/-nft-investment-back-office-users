@@ -1,11 +1,7 @@
-
-
-
 <template>
-  
   <div>
-  <Navbar/>
-  <Sidebar/>
+    <Navbar />
+    <Sidebar />
     <div class="section-copy wf-section">
       <div class="div-block-30-tranin-copy">
         <div class="text-block-18-tranin-copy">
@@ -26,14 +22,7 @@
           </div>
           <div class="div-block-49">
             <div class="div-block-50">
-              <div class="div-block-55">
-                <img
-                  src="~/assets/transaction_details/6460ab303cd46f90282cd955_429D72BD-A90E-4657-AE57-7631AF01A3D5 2.png"
-                  loading="lazy"
-                  alt=""
-                  class="image-40"
-                />
-              </div>
+              <div class="div-block-55"></div>
               <div class="div-block-58">
                 <div class="div-block-61">
                   <div class="text-block-31">Device ID: 0000111</div>
@@ -50,7 +39,8 @@
                   <div class="div-block-63">
                     <div class="div-block-64">
                       <div class="div-block-66">
-                        <img style="width:22px; height: 22px;"
+                        <img
+                          style="width: 22px; height: 22px"
                           src="~/assets/transaction_details/6460b5086a5c7615fcfbf4c1_currency-usd.png"
                           loading="lazy"
                           alt=""
@@ -66,8 +56,12 @@
                   </div>
                   <div class="div-block-63">
                     <div class="div-block-64">
-                      <div class="div-block-66" style="background-color: #1A73E7;">
-                        <img style="width:22px; height: 22px;"
+                      <div
+                        class="div-block-66"
+                        style="background-color: #1a73e7"
+                      >
+                        <img
+                          style="width: 22px; height: 22px"
                           src="~/assets/transaction_details/6460b509d6192761284ee288_account.png"
                           loading="lazy"
                           alt=""
@@ -83,8 +77,12 @@
                   </div>
                   <div class="div-block-63">
                     <div class="div-block-64">
-                      <div class="div-block-66" style="background-color: #16C0E8;">
-                        <img style="width:22px;"
+                      <div
+                        class="div-block-66"
+                        style="background-color: #16c0e8"
+                      >
+                        <img
+                          style="width: 22px"
                           src="~/assets/transaction_details/text-box.svg"
                           loading="lazy"
                           alt=""
@@ -122,6 +120,41 @@
               </div>
             </div>
           </div>
+          <div class="div-block-49">
+            <div class="map">
+              <div class="text-block-22">แผนที่</div>
+              <div class="div-block-50-2"></div>
+            </div>
+            <div class="pic-upload">
+              <div class="text-block-22">รูปภาพ</div>
+              <div class="div-block-52-2">
+                <Galleria
+                  :value="images"
+                  :responsiveOptions="responsiveOptions"
+                  :numVisible="5"
+                  containerStyle="width: 100%"
+                  preview
+                >
+                  <template #item="slotProps">
+                    <img
+                      :src="slotProps.item.itemImageSrc"
+                      :alt="slotProps.item.alt"
+                      style="width: 100%"
+                      preview
+                    />
+                  </template>
+                  <template #thumbnail="slotProps">
+                    <img
+                      :src="slotProps.item.thumbnailImageSrc"
+                      :alt="slotProps.item.alt"
+                      preview
+                    />
+                  </template>
+                </Galleria>
+              </div>
+            </div>
+          </div>
+
           <div class="div-block-53">
             <div><div class="text-block-27">Transaction</div></div>
             <div class="div-block-54">
@@ -245,14 +278,33 @@
       </div>
     </div>
   </div>
-  </template>
+</template>
 
-  <style scoped>
-  @import url(~/styles/transaction_details.css);
+<style scoped>
+@import url(~/styles/transaction_details.css);
+</style>
 
+<script setup>
+import { ref, onMounted } from "vue";
+import { PhotoService } from "@/service/PhotoService";
 
+onMounted(() => {
+  PhotoService.getImages().then((data) => (images.value = data));
+});
 
-  </style>
-    
-
-
+const images = ref();
+const responsiveOptions = ref([
+  {
+    breakpoint: "991px",
+    numVisible: 4,
+  },
+  {
+    breakpoint: "767px",
+    numVisible: 3,
+  },
+  {
+    breakpoint: "575px",
+    numVisible: 1,
+  },
+]);
+</script>

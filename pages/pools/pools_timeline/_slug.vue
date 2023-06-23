@@ -108,10 +108,6 @@
                         <div class="text-block-64">DEVICES ID :</div>
                         <div class="text-block-65">609213570</div>
                       </div>
-                      <div class="div-block-96">
-                        <div class="text-block-64">STATUS :</div>
-                        <div class="text-block-65">609213570</div>
-                      </div>
                     </div>
                     <div class="div-block-110">
                       <div class="card">
@@ -163,17 +159,6 @@
                   <div class="div-block-101">
                     <div class="div-block-102">
                      
-                      <NuxtLink to="./devices/">
-                      <Button
-                        class="button-4"
-                        style="
-                          color: white;
-                          font-family: Prompt;
-                          font-weight: 500;
-                        "
-                        label="Devices"
-                      />
-                      </NuxtLink>
                       <NuxtLink to="../">
                       <Button
                         class="button-4"
@@ -188,6 +173,50 @@
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="div-block-34-tranin-copy">
+        <div class="div-block-35-tranin-copy">
+          <div class="div-block-37-copy">
+            <div class="div-block-38-tranin-copy">
+              <div class="text-block-22">Devices ทั้งหมด</div>
+            </div>
+          </div>
+          <div class="div-block-53">
+            <div>
+              <div class="div-block-54">
+                <div class="card">
+                <TreeTable
+                  :paginator="true"
+                  :rows="5"
+                  :rowsPerPageOptions="[5, 10, 25, 50]"
+                  paginatorTemplate="RowsPerPageDropdown FirstPageLink PrevPageLink CurrentPageReport NextPageLink LastPageLink"
+                  currentPageReportTemplate="{first} to {last} of {totalRecords}"
+                >
+                  <template #paginatorstart>
+                    <Button type="button" icon="pi pi-refresh" text />
+                  </template>
+                  <Column
+                    style="backgroundColor: var(--highlight-bg), color: var(--highlight-text-color)"
+                    field="pool_name"
+                    header="ORDER NO"
+                    expander
+                  ></Column>
+                  <Column field="size" header="USERS"></Column>
+                  <Column field="size" header="DATE"></Column>
+                  <Column field="size" header="ADDRESS"></Column>
+                  <Column field="size" header="POOL ID"></Column>
+                  <Column field="size" header="AMOUNT"></Column>
+                  <Column field="type" header="STATUS"></Column>
+                  <template #paginatorend>
+                    <Button type="button" icon="pi pi-download" text />
+                  </template>
+                </TreeTable>
+              </div>
+                
               </div>
             </div>
           </div>

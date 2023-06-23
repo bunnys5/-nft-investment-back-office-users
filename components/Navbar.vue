@@ -32,6 +32,34 @@
     </div>
 </template>
 
+<script>
+// import { CButton } from '@chakra-ui/vue';
+
+
+export default {
+   async mounted() {
+    await this.pressMenu();
+
+   },
+   methods: {
+    async pressMenu() {
+
+      let sidebar = document.getElementById("div-block-6");
+      let menuBtn = document.getElementById("icon-menu");
+      menuBtn.onclick = function() {
+        sidebar.classList.remove("sidebar-close");
+        sidebar.classList.add("sidebar-active");
+        console.log(sidebar);
+        
+      };
+
+    }
+   }
+
+}
+
+</script>
+
 <style scoped>
   /* @import url(../styles/navbar.css); */
   @import url(../styles/NavbarSidebarDashboard.css);
@@ -69,30 +97,4 @@
 
 </style>
 
-<script>
-// import { CButton } from '@chakra-ui/vue';
 
-
-export default {
-   async mounted() {
-    await this.pressMenu();
-
-   },
-   methods: {
-    async pressMenu() {
-
-      let sidebar = document.getElementById("div-block-6");
-      let menuBtn = document.getElementById("icon-menu");
-      menuBtn.onclick = function() {
-        sidebar.classList.remove("sidebar-close");
-        sidebar.classList.add("sidebar-active");
-        console.log(sidebar);
-        
-      };
-
-    }
-   }
-
-}
-
-</script>

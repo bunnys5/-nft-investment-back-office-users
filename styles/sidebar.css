@@ -2639,6 +2639,13 @@ textarea.w-input, textarea.w-select {
   position: fixed;
 }
 
+.close-icon {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
 
 
 .sidebar-active {

@@ -11,6 +11,7 @@ import Timeline from 'primevue/timeline';
 import Dropdown from 'primevue/dropdown';
 import FileUpload from 'primevue/fileupload';
 import Avatar from 'primevue/avatar';
+import Galleria from 'primevue/galleria';
 
 
 const app = createApp();
@@ -29,6 +30,8 @@ export default defineNuxtPlugin(nuxtApp => {
     nuxtApp.vueApp.component('Dropdown', Dropdown)
     nuxtApp.vueApp.component('fileupload', FileUpload);
     nuxtApp.vueApp.component('Avatar', Avatar);
+    nuxtApp.vueApp.component('Galleria', Galleria);
+    
     
     //other components that you need
 })
