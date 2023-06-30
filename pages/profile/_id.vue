@@ -58,27 +58,44 @@
                     </div>
                   </div>
                   <div class="div-block-114">
-                    
+                    <Toast />
+                    <FileUpload
+                      mode="basic"
+                      name="demo[]"
+                      url="./upload.php"
+                      accept="image/*"
+                      :maxFileSize="1000000"
+                      @upload="onUpload"
+                      :auto="true"
+                      chooseLabel="Browse"
+                    />
                   </div>
                 </div>
                 <div class="div-block-99"></div>
                 <div class="div-block-106">
                   <div class="text-block-70">Bank Account</div>
                   <div class="div-block-108">
-                    <div class="div-block-109">
-                      <div class="div-block-96">
-                        <div class="text-block-64">BANK&nbsp;NAME :</div>
-                        <div class="text-block-65">609213570</div>
-                      </div>
-                      <div class="div-block-96">
-                        <div class="text-block-64">BANK&nbsp;NUMBER :</div>
-                        <div class="text-block-65">609213570</div>
-                      </div>
-                      <div class="div-block-96">
-                        <div class="text-block-64">BANK&nbsp;BRANCH</div>
-                        <div class="text-block-65">609213570</div>
-                      </div>
-                    </div>
+                    <div class="card">
+            <TreeTable
+              :paginator="true"
+              :rows="5"
+              :rowsPerPageOptions="[5, 10, 25, 50]"
+              paginatorTemplate="RowsPerPageDropdown FirstPageLink PrevPageLink CurrentPageReport NextPageLink LastPageLink"
+              currentPageReportTemplate="{first} to {last} of {totalRecords}"
+            >
+              <template #paginatorstart>
+                <Button type="button" icon="pi pi-refresh" text />
+              </template>
+
+              <Column field="size" header="NO."></Column>
+              <Column field="size" header="BANK NAME"></Column>
+              <Column field="size" header="BANK NUMBER"></Column>
+              <Column field="size" header="BANK BRANCH"></Column>
+              <template #paginatorend>
+                <Button type="button" icon="pi pi-download" text />
+              </template>
+            </TreeTable>
+          </div>
                     <div class="div-block-110"></div>
                   </div>
                 </div>
@@ -122,9 +139,11 @@
 }
 </style>
 
-<script lang="ts">
+<script setup lang="ts">
 import { defineComponent, ref } from "vue";
 import FileUpload from "primevue/fileupload";
 import Avatar from "primevue/avatar";
+import { useToast } from "primevue/usetoast";
 
+const onUpload = () => {};
 </script>
