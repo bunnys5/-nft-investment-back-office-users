@@ -4251,7 +4251,22 @@ textarea.w-input, textarea.w-select {
 }
 
 .div-block-38-tranin-copy {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  
   margin-left: 0;
+}
+
+.div-upload-1 {
+  height: 100%;
+}
+
+.div-upload-2 {
+  height: 100%;
+  align-items: center;
+
 }
 
 .div-block-39-tranin-copy {

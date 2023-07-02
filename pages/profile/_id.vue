@@ -58,17 +58,22 @@
                     </div>
                   </div>
                   <div class="div-block-114">
-                    <Toast />
-                    <FileUpload
-                      mode="basic"
-                      name="demo[]"
-                      url="./upload.php"
-                      accept="image/*"
-                      :maxFileSize="1000000"
-                      @upload="onUpload"
-                      :auto="true"
-                      chooseLabel="Browse"
-                    />
+                    <div class="div-upload-1">
+                      <div class="div-upload-2">
+                        <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" class="mr-2" size="xlarge" shape="circle" />
+                        <Toast />
+                        <FileUpload
+                          mode="basic"
+                          name="demo[]"
+                          url="./upload.php"
+                          accept="image/*"
+                          :maxFileSize="1000000"
+                          @upload="onUpload"
+                          :auto="true"
+                          chooseLabel="Browse"
+                        />
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="div-block-99"></div>
@@ -76,26 +81,26 @@
                   <div class="text-block-70">Bank Account</div>
                   <div class="div-block-108">
                     <div class="card">
-            <TreeTable
-              :paginator="true"
-              :rows="5"
-              :rowsPerPageOptions="[5, 10, 25, 50]"
-              paginatorTemplate="RowsPerPageDropdown FirstPageLink PrevPageLink CurrentPageReport NextPageLink LastPageLink"
-              currentPageReportTemplate="{first} to {last} of {totalRecords}"
-            >
-              <template #paginatorstart>
-                <Button type="button" icon="pi pi-refresh" text />
-              </template>
+                      <TreeTable
+                        :paginator="true"
+                        :rows="5"
+                        :rowsPerPageOptions="[5, 10, 25, 50]"
+                        paginatorTemplate="RowsPerPageDropdown FirstPageLink PrevPageLink CurrentPageReport NextPageLink LastPageLink"
+                        currentPageReportTemplate="{first} to {last} of {totalRecords}"
+                      >
+                        <template #paginatorstart>
+                          <Button type="button" icon="pi pi-refresh" text />
+                        </template>
 
-              <Column field="size" header="NO."></Column>
-              <Column field="size" header="BANK NAME"></Column>
-              <Column field="size" header="BANK NUMBER"></Column>
-              <Column field="size" header="BANK BRANCH"></Column>
-              <template #paginatorend>
-                <Button type="button" icon="pi pi-download" text />
-              </template>
-            </TreeTable>
-          </div>
+                        <Column field="size" header="NO."></Column>
+                        <Column field="size" header="BANK NAME"></Column>
+                        <Column field="size" header="BANK NUMBER"></Column>
+                        <Column field="size" header="BANK BRANCH"></Column>
+                        <template #paginatorend>
+                          <Button type="button" icon="pi pi-download" text />
+                        </template>
+                      </TreeTable>
+                    </div>
                     <div class="div-block-110"></div>
                   </div>
                 </div>

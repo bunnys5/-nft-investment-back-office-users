@@ -28,12 +28,7 @@
             alt=""
             class="image-8"
           /><NuxtLink class="link" to="../dashboard">Dashboard</NuxtLink>
-          <img
-            src="../assets/sidebar-navbar-dashboard/645a0c25aebb03a1063120a0_Rectangle 111.svg"
-            loading="lazy"
-            alt=""
-            class="image-10"
-          />
+          
         </div>
         <!-- <div class="div-block-17">
           <img
@@ -70,7 +65,7 @@
             />
           </div>
           <div class="div-block-26-copy-copy">
-            <NuxtLink class="link-3-copy-copy" to="../dividend">Pools</NuxtLink>
+            <NuxtLink class="link-3-copy-copy" to="../pools">Collections</NuxtLink>
           </div>
         </div>
         <div class="div-block-18-copy-copy">
@@ -83,7 +78,7 @@
             />
           </div>
           <div class="div-block-26-copy-copy">
-            <NuxtLink class="link-3-copy-copy" to="../dividend">Profile</NuxtLink>
+            <NuxtLink class="link-3-copy-copy" to="../profile/_id">Profile</NuxtLink>
           </div>
         </div>
         <div class="div-block-18-copy-copy-logout">
