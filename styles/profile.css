@@ -4261,11 +4261,26 @@ textarea.w-input, textarea.w-select {
 
 .div-upload-1 {
   height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.text-p {
+  font-family: 'Prompt';
+  font-size: 18px;
+  font-weight: normal;
 }
 
 .div-upload-2 {
   height: 100%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  gap: 20px;
 
 }
 
@@ -5158,6 +5173,7 @@ textarea.w-input, textarea.w-select {
 
 .div-block-114 {
   width: 50%;
+
 }
 
 .div-block-115 {

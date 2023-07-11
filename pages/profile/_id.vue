@@ -60,7 +60,12 @@
                   <div class="div-block-114">
                     <div class="div-upload-1">
                       <div class="div-upload-2">
-                        <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" class="mr-2" size="xlarge" shape="circle" />
+                        <div class="text-p">Profile</div>
+                        <Avatar
+                          image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png"
+                          class="mr-2 p-avatar-xl"
+                          shape="circle"
+                        />
                         <Toast />
                         <FileUpload
                           mode="basic"
@@ -69,8 +74,6 @@
                           accept="image/*"
                           :maxFileSize="1000000"
                           @upload="onUpload"
-                          :auto="true"
-                          chooseLabel="Browse"
                         />
                       </div>
                     </div>
